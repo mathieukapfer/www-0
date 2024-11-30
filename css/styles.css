@@ -10835,3 +10835,35 @@ textarea.form-control-lg {
   background-position: center;
   background-size: cover;
 }
+
+/* Style général pour le bandeau */
+/* Style pour le bandeau avec image */
+.promo-banner {
+  background: url('../assets/ruban.png') no-repeat center center;
+  background-size: cover; /* Ajuste l'image au bandeau */
+  color: white;
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 15px 0;
+  position: relative;
+  overflow: hidden;
+  height: 60px; /* Hauteur du bandeau */
+  border: 0px solid #ff0000; /* Facultatif : bordure rouge pour mieux délimiter */
+}
+
+/* Texte défilant */
+.scrolling-text {
+  display: inline-block;
+  white-space: nowrap;
+  animation: scroll 10s linear infinite;
+}
+
+/* Animation pour le scrolling */
+@keyframes scroll {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
