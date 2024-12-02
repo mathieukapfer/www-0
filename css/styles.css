@@ -10839,7 +10839,7 @@ textarea.form-control-lg {
 /* Style général pour le bandeau */
 /* Style pour le bandeau avec image */
 .promo-banner {
-  background: url('../assets/ruban.png') no-repeat center center;
+  background: url('../assets/boule_noel.jpg') no-repeat center center;
   background-size: cover; /* Ajuste l'image au bandeau */
   color: white;
   font-size: 1.2rem;
