@@ -1,0 +1,328 @@
+/* =========================================================
+   LOMA THAI MASSAGE — SECTION AVIS GOOGLE
+   ========================================================= */
+
+.loma-reviews {
+  --loma-bg: #f6f2eb;
+  --loma-card: #ffffff;
+  --loma-text: #3f4039;
+  --loma-title: #33352f;
+  --loma-muted: #77776f;
+  --loma-accent: #b4945b;
+  --loma-border: rgba(63, 64, 57, 0.10);
+
+  width: 100%;
+  padding: 90px 20px;
+  background: var(--loma-bg);
+  box-sizing: border-box;
+}
+
+.loma-reviews *,
+.loma-reviews *::before,
+.loma-reviews *::after {
+  box-sizing: border-box;
+}
+
+
+/* ---------------------------------------------------------
+   CONTENEUR
+   --------------------------------------------------------- */
+
+.loma-reviews__container {
+  width: 100%;
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+
+/* ---------------------------------------------------------
+   EN-TÊTE
+   --------------------------------------------------------- */
+
+.loma-reviews__header {
+  max-width: 680px;
+  margin: 0 auto 50px;
+  text-align: center;
+}
+
+.loma-reviews__eyebrow {
+  display: inline-block;
+  margin-bottom: 14px;
+
+  color: var(--loma-accent);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  line-height: 1.4;
+}
+
+.loma-reviews__header h2 {
+  margin: 0 0 18px;
+
+  color: var(--loma-title);
+  font-size: clamp(30px, 4vw, 42px);
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.loma-reviews__header p {
+  max-width: 600px;
+  margin: 0 auto;
+
+  color: var(--loma-muted);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.8;
+}
+
+
+/* ---------------------------------------------------------
+   GRILLE DES AVIS
+   --------------------------------------------------------- */
+
+.loma-reviews__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+
+/* ---------------------------------------------------------
+   CARTE AVIS
+   --------------------------------------------------------- */
+
+.loma-review {
+  display: flex;
+  flex-direction: column;
+
+  min-height: 310px;
+  padding: 34px 32px;
+
+  background: var(--loma-card);
+  border: 1px solid var(--loma-border);
+  border-radius: 6px;
+
+  box-shadow: 0 8px 30px rgba(50, 45, 35, 0.045);
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.loma-review:hover {
+  transform: translateY(-4px);
+
+  box-shadow: 0 14px 35px rgba(50, 45, 35, 0.08);
+}
+
+
+/* ---------------------------------------------------------
+   ÉTOILES
+   --------------------------------------------------------- */
+
+.loma-review__stars {
+  margin-bottom: 24px;
+
+  color: var(--loma-accent);
+  font-size: 17px;
+  letter-spacing: 3px;
+  line-height: 1;
+}
+
+
+/* ---------------------------------------------------------
+   TEXTE
+   --------------------------------------------------------- */
+
+.loma-review__text {
+  flex: 1;
+
+  margin: 0;
+
+  color: var(--loma-text);
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.8;
+}
+
+
+/* ---------------------------------------------------------
+   AUTEUR
+   --------------------------------------------------------- */
+
+.loma-review__author {
+  display: flex;
+  flex-direction: column;
+
+  margin-top: 28px;
+  padding-top: 20px;
+
+  border-top: 1px solid var(--loma-border);
+}
+
+.loma-review__name {
+  color: var(--loma-title);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.loma-review__source {
+  margin-top: 3px;
+
+  color: var(--loma-muted);
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+
+/* ---------------------------------------------------------
+   PIED DE SECTION
+   --------------------------------------------------------- */
+
+.loma-reviews__footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+
+  margin-top: 42px;
+}
+
+.loma-reviews__google-rating {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  color: var(--loma-muted);
+  font-size: 13px;
+}
+
+.loma-reviews__google-stars {
+  color: var(--loma-accent);
+  font-size: 15px;
+  letter-spacing: 2px;
+}
+
+
+/* ---------------------------------------------------------
+   BOUTON
+   --------------------------------------------------------- */
+
+.loma-reviews__button {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+
+  padding: 12px 20px;
+
+  color: var(--loma-title);
+  background: transparent;
+
+  border: 1px solid var(--loma-border);
+  border-radius: 3px;
+
+  font-size: 13px;
+  font-weight: 500;
+  text-decoration: none;
+
+  transition:
+    background 0.25s ease,
+    color 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.loma-reviews__button:hover {
+  color: #ffffff;
+  background: var(--loma-title);
+  border-color: var(--loma-title);
+}
+
+.loma-reviews__button span {
+  font-size: 17px;
+  line-height: 1;
+  transition: transform 0.25s ease;
+}
+
+.loma-reviews__button:hover span {
+  transform: translateX(3px);
+}
+
+
+/* ---------------------------------------------------------
+   TABLETTE
+   --------------------------------------------------------- */
+
+@media (max-width: 900px) {
+
+  .loma-reviews {
+    padding: 70px 20px;
+  }
+
+  .loma-reviews__grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+    max-width: 650px;
+    margin: 0 auto;
+  }
+
+  .loma-review {
+    min-height: auto;
+  }
+}
+
+
+/* ---------------------------------------------------------
+   MOBILE
+   --------------------------------------------------------- */
+
+@media (max-width: 600px) {
+
+  .loma-reviews {
+    padding: 60px 16px;
+  }
+
+  .loma-reviews__header {
+    margin-bottom: 35px;
+  }
+
+  .loma-reviews__header h2 {
+    font-size: 30px;
+  }
+
+  .loma-reviews__header p {
+    font-size: 15px;
+    line-height: 1.7;
+  }
+
+  .loma-review {
+    padding: 28px 24px;
+  }
+
+  .loma-review__stars {
+    margin-bottom: 20px;
+  }
+
+  .loma-review__text {
+    font-size: 14px;
+  }
+
+  .loma-reviews__footer {
+    flex-direction: column;
+    gap: 20px;
+
+    margin-top: 32px;
+  }
+
+  .loma-reviews__google-rating {
+    flex-direction: column;
+    gap: 6px;
+
+    text-align: center;
+  }
+
+  .loma-reviews__button {
+    width: 100%;
+    justify-content: center;
+  }
+}
